@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #1D212A;
+}
+
+.landing {
+    background-image: url('../img/landing-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    position: absolute;
+    left: 25%;
+}
+
+.round {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-style: none;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swipe-button {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    background-color: #042130;
+    background-image: url('../logo/shipAnchor-logo.png');
+    background-size: contain;
+}
+
+.nav-button {
+    background-color: #48463D;
+    background-size: contain;
+}
+
+.menu {
+    background-image: url('../logo/shipSteering-logo.png');
+}
+
+.home {
+    background-image: url('../logo/goingMerry-logo.png');
+}
+
+.chara {
+    background-image: url('../logo/mugiwara-logo.png');
+}
+
+.arcs {
+    background-image: url('../logo/compass-logo.png');
+    background-size: 30px;
+}
+
+.defruit {
+    background-image: url(../logo/devilFruit-logo.png);
+    background-size: 25px;
+}
+
+/* .menu-dropdown {
+
+} */
