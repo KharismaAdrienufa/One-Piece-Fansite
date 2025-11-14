@@ -13,13 +13,14 @@ body {
     background-color: #1D212A;
 }
 
+/* landing page */
 .landing {
     background-image: url('../img/landing-img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +36,6 @@ body {
     width: 50px;
     border-radius: 50%;
     border-style: none;
-    display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -47,8 +47,16 @@ body {
     background-color: #042130;
     background-image: url('../logo/shipAnchor-logo.png');
     background-size: contain;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
 }
 
+.swipe-button:hover {
+    transform: translateY(-15px);
+}
+
+/* navbar */
 .nav-button {
     background-color: #48463D;
     background-size: contain;
@@ -76,6 +84,62 @@ body {
     background-size: 25px;
 }
 
-/* .menu-dropdown {
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
 
-} */
+.menu-dropdown.show {
+    display: inline;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu-list li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: beige;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.sliding-content {
+    width: 95%;
+    background-color: #303643;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+
+.chars-content {
+}

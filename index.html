@@ -16,23 +16,54 @@
                     about one piece
                     </p>
                 </section>
-                <button class="round swipe-button"></button>
+                <button class="round swipe-button" id="swipeButton"></button>
             </div>
             <nav>
-                <button class="round menu nav-button"></button>
-                <div class="menu-dropdown">
-                    <ul>
-                        <li><a href="#"><i class="round home nav-button"></i> Home</a></li>
-                        <li><a href="#"><i class="round chara nav-button"></i>Characters</a></li>
-                        <li><a href="#"><i class="round arcs nav-button"></i>Arcs</a></li>
-                        <li><a href="#"><i class="round defruit nav-button"></i>Devil's Fruit</a></li>
+                <button class="round menu nav-button" id="menuButton"></button>
+                <div class="menu-dropdown" id="menuDropdown">
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">
+                                <i class="round home nav-button"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="round chara nav-button"></i>
+                                <span>Characters</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="round arcs nav-button"></i>
+                                <span>Arcs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="round defruit nav-button"></i>
+                                <span>Devil's Fruit</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <!-- <img src="./assets/onePiece-logo.png" alt="One Piece Logo"> -->
+                <a href="#"><img src="./assets/logo/onePiece-logo.png" alt="One Piece Logo" class="logo"></a>
             </nav>
         </header>
         <main>
-
+            <div class="main-content">
+                <article class="sliding-content card" id="slidingContent">
+                    <h4>One Piece is a Japanese manga series written and ilustrated by Eiichiro Oda.<br>
+                        The series follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates.<br>
+                        As he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.
+                    </h4>
+                    <img src="./assets/img/strawHatCrew-img.png" alt="Straw Hat Crew">
+                </article>
+                <article class="chars-content card">
+                    <h2>one piece</h2>
+                </article>
+            </div>
             <aside>
 
             </aside>
@@ -40,5 +71,24 @@
         <footer>
 
         </footer>
+        <script>
+            //swipe up
+            const swipeButton = document.getElementById("swipeButton");
+            const slidingContent = document.getElementById("slidingContent");
+
+            swipeButton.addEventListener("click", () => slidingContent.scrollIntoView({behavior: "smooth"}));
+
+            //main menu
+            const menuButton = document.getElementById('menuButton');
+            const menuDropdown = document.getElementById('menuDropdown');
+
+            menuButton.addEventListener("click", () => menuDropdown.classList.toggle("show"));
+
+            document.addEventListener("click", (e) => {
+                if(!menuButton.contains(e.target) && !menuDropdown.contains(e.target)) {
+                    menuDropdown.classList.remove("show");
+                }
+            })
+        </script>
     </body>
 </html>
