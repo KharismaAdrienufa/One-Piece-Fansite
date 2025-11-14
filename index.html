@@ -18,54 +18,55 @@
                 </section>
                 <button class="round swipe-button" id="swipeButton"></button>
             </div>
-            <nav>
-                <button class="round menu nav-button" id="menuButton"></button>
-                <div class="menu-dropdown" id="menuDropdown">
-                    <ul class="menu-list">
-                        <li>
-                            <a href="#">
-                                <i class="round home nav-button"></i>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="round chara nav-button"></i>
-                                <span>Characters</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="round arcs nav-button"></i>
-                                <span>Arcs</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="round defruit nav-button"></i>
-                                <span>Devil's Fruit</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="bar">
+                <nav>
+                    <button class="round menu nav-button" id="menuButton"></button>
+                    <div class="menu-dropdown" id="menuDropdown">
+                        <ul class="menu-list" id="menuList"></ul>
+                    </div>
+                </nav>
                 <a href="#"><img src="./assets/logo/onePiece-logo.png" alt="One Piece Logo" class="logo"></a>
-            </nav>
+            </div>
+            <div class="sliding-content card" id="slidingContent">
+                <h4>One Piece is a Japanese manga series written and ilustrated by Eiichiro Oda.<br>
+                    The series follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates.<br>
+                    As he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.
+                </h4>
+                <img src="./assets/img/strawHatCrew-img.png" alt="Straw Hat Crew">
+            </div>
         </header>
         <main>
             <div class="main-content">
-                <article class="sliding-content card" id="slidingContent">
-                    <h4>One Piece is a Japanese manga series written and ilustrated by Eiichiro Oda.<br>
-                        The series follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates.<br>
-                        As he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.
-                    </h4>
-                    <img src="./assets/img/strawHatCrew-img.png" alt="Straw Hat Crew">
-                </article>
-                <article class="chars-content card">
-                    <h2>one piece</h2>
+                <h2>Characters</h2>
+                <article class="chara-content">
+                    <section class="chara card">
+                        <h3>Mon<br>key<br>D.<br>Luffy</h3>
+                        <img src="./assets/img/luffy-chara.png" alt="Luffy" class="chara-img">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">3.000.000</h5>
+                        <p>
+                            Occupation : Pirate Captain<br>
+                            Age : 19 (after timeskip)<br>
+                            Origin : East Blue (Foosha Village)
+                        </p>
+                    </section>
+                    <section class="chara card">
+                        <h3>Mon<br>key<br>D.<br>Luffy</h3>
+                        <img src="./assets/img/luffy-chara.png" alt="Luffy" class="chara-img">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">3.000.000</h5>
+                        <p>
+                            Occupation : Pirate Captain<br>
+                            Age : 19 (after timeskip)<br>
+                            Origin : East Blue (Foosha Village)
+                        </p>
+                    </section>
                 </article>
             </div>
             <aside>
-
+                <article class="profile card">
+                    <header>
+                        <h2>Author's Profile</h2>
+                    </header>
+                </article>
             </aside>
         </main>
         <footer>
@@ -79,8 +80,8 @@
             swipeButton.addEventListener("click", () => slidingContent.scrollIntoView({behavior: "smooth"}));
 
             //main menu
-            const menuButton = document.getElementById('menuButton');
-            const menuDropdown = document.getElementById('menuDropdown');
+            const menuButton = document.getElementById("menuButton");
+            const menuDropdown = document.getElementById("menuDropdown");
 
             menuButton.addEventListener("click", () => menuDropdown.classList.toggle("show"));
 
@@ -89,6 +90,37 @@
                     menuDropdown.classList.remove("show");
                 }
             })
+
+            //looping navigation
+            const listItem = [
+                {iconClass: "round home nav-button", text:"Home", link:"#"},
+                {iconClass: "round chars nav-button", text:"Characters", link:"#"},
+                {iconClass: "round arcs nav-button", text:"Arcs", link:"#"},
+                {iconClass: "round defruit nav-button", text:"Devil's Fruit", link:"#"}
+            ];
+
+            const menuList = document.getElementById("menuList");
+
+            listItem.forEach(item => {
+                const li = document.createElement("li");
+
+                const a = document.createElement("a");
+                a.href = item.link;
+
+                const i = document.createElement("i");
+                i.className = item.iconClass;
+
+                const span = document.createElement("span");
+                span.textContent = item.text;
+
+                a.appendChild(i);
+                a.appendChild(span);
+
+                li.appendChild(a);
+
+                menuList.appendChild(li);
+            })
+
         </script>
     </body>
 </html>

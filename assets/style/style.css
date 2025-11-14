@@ -11,6 +11,11 @@ html, body{
 
 body {
     background-color: #1D212A;
+    color: beige;
+}
+
+main {
+    display: flex;
 }
 
 /* landing page */
@@ -56,7 +61,21 @@ body {
     transform: translateY(-15px);
 }
 
-/* navbar */
+/* bar */
+.bar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    height: 50px;
+}
+
 .nav-button {
     background-color: #48463D;
     background-size: contain;
@@ -70,7 +89,7 @@ body {
     background-image: url('../logo/goingMerry-logo.png');
 }
 
-.chara {
+.chars {
     background-image: url('../logo/mugiwara-logo.png');
 }
 
@@ -97,7 +116,7 @@ body {
 .menu-list {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
 }
 
@@ -109,31 +128,23 @@ body {
     color: beige;
 }
 
-.logo {
-    height: 50px;
-}
-
-nav {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-}
-
 /* content */
 .main-content {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    margin: 0 50px;
+    flex-grow: 5;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 20px;
 }
 
 .sliding-content {
+    margin: 50px auto;
     width: 95%;
     background-color: #303643;
     display: flex;
@@ -141,5 +152,51 @@ nav {
     align-items: center;
 }
 
-.chars-content {
+.chara-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.chara {
+    height: 300px;
+    width: 150px;
+    background-color: #E0DABE;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.chara h3 {
+    flex-grow: 1;
+    font-size: larger;
+}
+
+.chara-img {
+    height: 225px;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+}
+
+.nominal {
+    font-size: large;
+    font-weight: bold;
+}
+
+.berries-logo {
+    width: 20px;
+}
+
+.chara p {
+    font-size: small;
+}
+
+aside {
+    flex-grow: 1;
+}
+
+.profile {
+
 }
