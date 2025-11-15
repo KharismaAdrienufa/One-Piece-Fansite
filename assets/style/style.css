@@ -18,7 +18,7 @@ main {
     display: flex;
 }
 
-/* landing page */
+/*landing page*/
 .landing {
     background-image: url('../img/landing-img.jpg');
     background-size: cover;
@@ -61,7 +61,7 @@ main {
     transform: translateY(-15px);
 }
 
-/* bar */
+/*bar*/
 .bar {
     width: 100%;
     padding: 20px;
@@ -70,6 +70,7 @@ main {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 
 .logo {
@@ -85,20 +86,20 @@ main {
     background-image: url('../logo/shipSteering-logo.png');
 }
 
-.home {
+.home-menu {
     background-image: url('../logo/goingMerry-logo.png');
 }
 
-.chars {
+.chara-menu {
     background-image: url('../logo/mugiwara-logo.png');
 }
 
-.arcs {
+.arcs-menu {
     background-image: url('../logo/compass-logo.png');
     background-size: 30px;
 }
 
-.defruit {
+.defruit-menu {
     background-image: url(../logo/devilFruit-logo.png);
     background-size: 25px;
 }
@@ -128,21 +129,6 @@ main {
     color: beige;
 }
 
-/* content */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 0 50px;
-    flex-grow: 5;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-}
-
 .sliding-content {
     margin: 50px auto;
     width: 95%;
@@ -152,6 +138,22 @@ main {
     align-items: center;
 }
 
+/*content*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 50px;
+    flex-grow: 5;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/*chara content*/
 .chara-content {
     display: flex;
     flex-direction: row;
@@ -193,10 +195,69 @@ main {
     font-size: small;
 }
 
+/*arcs content*/
+.arcs-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.arcs {
+    width: 400px;
+    background-color: #303643;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.arcs img {
+    width: 80%;
+}
+
+/*devil's fruit*/
+.defruit-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.defruit-content img {
+    width: 200px;
+    position: relative
+}
+
+.defruit-desc {
+    display: none;
+    position: absolute;
+    background-color: #E0DABE;
+    color: black;
+    margin: 10px;
+}
+
+.gomu img:hover + .defruit-desc {
+    display: block;
+}
+
+/*aside*/
 aside {
     flex-grow: 1;
+    margin: 0 30px;
 }
 
 .profile {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
 
+figure img {
+    width: 150px;
+}
+
+table {
+    font-size: small;
 }
