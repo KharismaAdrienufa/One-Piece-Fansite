@@ -161,7 +161,7 @@ main {
 }
 
 .chara {
-    height: 300px;
+    height: 400px;
     width: 150px;
     background-color: #E0DABE;
     position: relative;
@@ -176,10 +176,10 @@ main {
 }
 
 .chara-img {
-    height: 225px;
+    height: 300px;
     position: absolute;
     top: -45px;
-    right: -45px;
+    right: -70px;
 }
 
 .nominal {
@@ -203,6 +203,7 @@ main {
 }
 
 .arcs {
+    height: 350px;
     width: 400px;
     background-color: #303643;
     padding: 20px;
@@ -213,7 +214,7 @@ main {
 }
 
 .arcs img {
-    width: 80%;
+    width: 60%;
 }
 
 /*devil's fruit*/
@@ -223,20 +224,25 @@ main {
     gap: 10px;
 }
 
-.defruit-content img {
+.defruit {
+    position: relative;
+}
+
+.defruit img {
     width: 200px;
-    position: relative
 }
 
 .defruit-desc {
     display: none;
     position: absolute;
+    top: -25px;
+    right: -50px;
     background-color: #E0DABE;
     color: black;
     margin: 10px;
 }
 
-.gomu img:hover + .defruit-desc {
+.defruit img:hover + .defruit-desc {
     display: block;
 }
 
