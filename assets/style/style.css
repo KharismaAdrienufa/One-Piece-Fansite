@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: visible;
 }
 
 html, body{
@@ -154,10 +155,21 @@ main {
 }
 
 /*chara content*/
+.chara-wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
 .chara-content {
     display: flex;
     flex-direction: row;
+    height: max-content;
     gap: 30px;
+    overflow: visible;
+}
+
+.chara-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .chara {
@@ -176,10 +188,8 @@ main {
 }
 
 .chara-img {
-    height: 300px;
     position: absolute;
-    top: -45px;
-    right: -70px;
+    z-index: 9999;
 }
 
 .nominal {
@@ -249,7 +259,7 @@ main {
 /*aside*/
 aside {
     flex-grow: 1;
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
 .profile {
