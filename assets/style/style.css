@@ -12,10 +12,21 @@ html, body{
 body {
     background-color: #1D212A;
     color: beige;
+    font-family: "Poppins", sans-serif;
 }
 
 main {
     display: flex;
+}
+
+h1,
+h3,
+h5 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+    font-size: small;
 }
 
 /*landing page*/
@@ -34,6 +45,9 @@ main {
 .main-title {
     position: absolute;
     left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .round {
@@ -111,7 +125,7 @@ main {
 }
 
 .menu-dropdown.show {
-    display: inline;
+    display: block;
 }
 
 .menu-list {
@@ -130,17 +144,33 @@ main {
 }
 
 .sliding-content {
+    background-color: #303643;
     margin: 50px auto;
     width: 95%;
-    background-color: #303643;
-    display: flex;
-    align-self: center;
-    align-items: center;
 }
 
-.sliding-content img {
+.slide {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.slide img {
     width: 50%;
 }
+
+.slide h4,
+.slide img {
+    display: none;
+}
+
+.slide.active h4,
+.slide.active img {
+    display: block;
+}
+
 
 /*content*/
 .main-content {
@@ -158,27 +188,21 @@ main {
 }
 
 /*chara content*/
-.chara-wrapper {
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
 .chara-content {
-    width: 650px;
+    width: 800px;
     display: flex;
     flex-direction: row;
     height: max-content;
-    gap: 35px;
-    overflow: visible;
+    gap: 50px;
+    overflow-x: auto;
 }
 
-.chara-wrapper::-webkit-scrollbar {
+.chara-content::-webkit-scrollbar {
     display: none;
 }
 
 .chara {
-    height: 400px;
-    width: 500px;
+    height: 450px;
     background-color: #E0DABE;
     position: relative;
     display: flex;
@@ -189,7 +213,7 @@ main {
 
 .chara h3 {
     flex-grow: 1;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .chara-img {
@@ -197,16 +221,12 @@ main {
 }
 
 .nominal {
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
 }
 
 .berries-logo {
-    width: 20px;
-}
-
-.chara p {
-    font-size: small;
+    width: 15px;
 }
 
 /*arcs content*/
@@ -214,17 +234,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow-y: auto;
+    height: 500px;
 }
 
+.arcs-content::-webkit-scrollbar {
+    display: none;
+}
+
+
 .arcs {
-    height: 350px;
     width: 400px;
-    background-color: #303643;
+    background-color: #E0DABE;
+    color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .arcs img {
@@ -233,9 +260,16 @@ main {
 
 /*devil's fruit*/
 .defruit-content {
+    height: 300px;
+    width: 800px;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: auto;
     gap: 10px;
+}
+
+.defruit-content::-webkit-scrollbar {
+    display: none;
 }
 
 .defruit {
@@ -250,7 +284,7 @@ main {
     display: none;
     position: absolute;
     top: -25px;
-    right: -50px;
+    right: -80px;
     background-color: #E0DABE;
     color: black;
     margin: 10px;
@@ -266,7 +300,7 @@ aside {
     margin: 0 30px;
     display: flex;
     flex-direction: column;
-    gap: 500px;
+    gap: 250px;
 }
 
 .profile {
@@ -286,11 +320,28 @@ table {
     font-size: small;
 }
 
-.mini-gallery {
+.gallery {
     background-color: #303643;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
-.organizations {
-    background-color: #E0DABE;
-    color: black;
+.gallery-wrapper {
+    height: 200px;
+    width: 230px;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.pic {
+    width: 100%;
+    flex-shrink: 0;
 }

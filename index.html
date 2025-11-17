@@ -4,6 +4,11 @@
         <meta>
         <title>One Piece Fansite</title>
         <link rel="stylesheet" href="assets/style/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -28,120 +33,224 @@
                 <a href="#landing-page"><img src="./assets/logo/onePiece-logo.png" alt="One Piece Logo" class="logo"></a>
             </div>
             <div class="sliding-content card" id="slidingContent">
-                <h4>One Piece is a Japanese manga series written and ilustrated by Eiichiro Oda.<br>
-                    The series follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates.<br>
-                    As he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.
-                </h4>
-                <img src="./assets/img/straw-hat-crew.jpg" alt="Straw Hat Crew">
+                <section class="slide active">
+                    <h4>One Piece is a Japanese manga series written and ilustrated by Eiichiro Oda.
+                        The series follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates.
+                        As he explores the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.
+                    </h4>
+                    <img src="./assets/img/captain-luffy.jpg" alt="Luffy">
+                </section>
+                <section class="slide">
+                    <h4>One Piece is the name the world gave to all the treasure gained by the Pirate King Gol D. Roger.
+                        At least a portion of it once belonged to Joy Boy during the Void Century.
+                        The treasure is said to be of unimaginable value, and is supposedly located on Laugh Tale, the final island of the Grand Line.
+                    </h4>
+                    <img src="./assets/img/gol-d-roger.jpg" alt="Gol D. Roger">
+                </section>
+                <section class="slide">
+                    <h4>The One Piece is the driving goal of Monkey D. Luffy and his crew, as well as many other pirates,
+                        all seeking to claim the treasure in order to become the next Pirate King,
+                        following Roger's final words at his world-changing execution.
+                    </h4>
+                    <img src="./assets/img/mugiwara-crew.jpg" alt="Straw Hat Crew">
+                </section>
             </div>
         </header>
         <main>
             <div class="main-content">
                 <h2 id="characters">Characters</h2>
-                <div class="chara-wrapper">
-                    <article class="chara-content">
-                        <section class="chara card">
-                            <h3>Mon<br>key<br>D.<br>Luffy</h3>
-                            <img src="./assets/img/luffy-chara.png" alt="Luffy" class="chara-img" style="height:300px; top:-45px; right:-70px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">3.000.000.000</h5>
-                            <p>
-                                Occupation : Pirate Captain<br>
-                                Age : 19 (after timeskip)<br>
-                                Origin : East Blue (Foosha Village)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Roro<br>noa<br>Zoro</h3>
-                            <img src="./assets/img/zoro-chara.png" alt="Zoro" class="chara-img" style="height:380px; top:-90px; right:-50px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.111.000.000</h5>
-                            <p>
-                                Occupation : Master Swordsman<br>
-                                Age : 21 (after timeskip)<br>
-                                Origin : East Blue (Shimotsuki Village)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Na<br>mi</h3>
-                            <img src="./assets/img/nami-chara.png" alt="Nami" class="chara-img" style="height:350px; top:-65px; right:-40px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">366.000.000</h5>
-                            <p>
-                                Occupation : Navigator<br>
-                                Age : 20 (after timeskip)<br>
-                                Origin : East Blue (Cocoyasi Village)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>God<br>Us<br>opp</h3>
-                            <img src="./assets/img/usopp-chara.png" alt="Usopp" class="chara-img" style="height:325px; top:-40px; right:-70px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">500.000.000</h5>
-                            <p>
-                                Occupation : Sniper<br>
-                                Age : 19 (after timeskip)<br>
-                                Origin : East Blue (Syrup Village)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Vin<br>smoke<br>Sanji</h3>
-                            <img src="./assets/img/sanji-chara.png" alt="Sanji" class="chara-img" style="height:325px; top:-30px; right:-70px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.032.000.000</h5>
-                            <p>
-                                Occupation : Chef<br>
-                                Age : 21 (after timeskip)<br>
-                                Origin : East Blue (Germa Kingdom)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Tony<br>tony<br>Chopper</h3>
-                            <img src="./assets/img/chopper-chara.png" alt="Chopper" class="chara-img" style="height:150px; top:75px; right:-40px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.000</h5>
-                            <p>
-                                Occupation : Doctor<br>
-                                Age : 17 (after timeskip)<br>
-                                Origin : Grand Line (Drum Island)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Nico<br>Robin</h3>
-                            <img src="./assets/img/robin-chara.png" alt="Robin" class="chara-img" style="height:285px; top:-25px; right:-50px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">930.000.000</h5>
-                            <p>
-                                Occupation : Archaeologist<br>
-                                Age : 30 (after timeskip)<br>
-                                Origin : West Blue (Ohara Island)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Fran<br>ky</h3>
-                            <img src="./assets/img/franky-chara.png" alt="Franky" class="chara-img" style="height:280px; top:-10px; right:-45px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">394.000.000</h5>
-                            <p>
-                                Occupation : Shipwright<br>
-                                Age : 36 (after timeskip)<br>
-                                Origin : South Blue (Water Seven)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Bro<br>ok</h3>
-                            <img src="./assets/img/brook-chara.png" alt="Brook" class="chara-img" style="height:300px; top:-40px; right:-85px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">383.000.000</h5>
-                            <p>
-                                Occupation : Musician<br>
-                                Age : 90 (after timeskip)<br>
-                                Origin : West Blue (Namakura Island)
-                            </p>
-                        </section>
-                        <section class="chara card">
-                            <h3>Jin<br>be</h3>
-                            <img src="./assets/img/jinbei-chara.png" alt="Jinbe" class="chara-img" style="height:250px; top:10px; right:-65px;">
-                            <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.100.000.000</h5>
-                            <p>
-                                Occupation : Helmsman<br>
-                                Age : 46 (after timeskip)<br>
-                                Origin : Grand Line (Fishman Island)
-                            </p>
-                        </section>
-                    </article>
-                </div>
+                <article class="chara-content">
+                    <section class="chara card">
+                        <h3>Mon<br>key<br>D.<br>Luffy</h3>
+                        <img src="./assets/img/luffy-chara.png" alt="Luffy" class="chara-img" style="height:300px; top:-25px; right:-60px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">3.000.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Pirate Captain</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>19 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>East Blue (Foosha Village)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Roro<br>noa<br>Zoro</h3>
+                        <img src="./assets/img/zoro-chara.png" alt="Zoro" class="chara-img" style="height:380px; top:-75px; right:-40px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.111.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Swordsman</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>21 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>East Blue (Shimotsuki Village)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Na<br>mi</h3>
+                        <img src="./assets/img/nami-chara.png" alt="Nami" class="chara-img" style="height:350px; top:-45px; right:-30px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">366.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Navigator</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>20 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>East Blue (Cocoyasi Village)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>God<br>Us<br>opp</h3>
+                        <img src="./assets/img/usopp-chara.png" alt="Usopp" class="chara-img" style="height:325px; top:-20px; right:-50px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">500.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Sniper</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>19 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>East Blue (Syrup Village)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Vin<br>smo<br>ke<br>Sanji</h3>
+                        <img src="./assets/img/sanji-chara.png" alt="Sanji" class="chara-img" style="height:325px; top:-25px; right:-60px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.032.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Chef</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>21 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>East Blue (Germa Kingdom)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Tony<br>tony<br>Chop<br>per</h3>
+                        <img src="./assets/img/chopper-chara.png" alt="Chopper" class="chara-img" style="height:200px; top:80px; right:-35px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Doctor</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>17 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>Grand Line (Drum Island)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Nico<br>Rob<br>in</h3>
+                        <img src="./assets/img/robin-chara.png" alt="Robin" class="chara-img" style="height:300px; top:-10px; right:-40px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">930.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Archaeologist</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>30 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>West Blue (Ohara Island)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Fran<br>ky</h3>
+                        <img src="./assets/img/franky-chara.png" alt="Franky" class="chara-img" style="height:300px; top:-10px; right:-50px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">394.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Shipwright</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>36 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>South Blue (Water Seven)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Bro<br>ok</h3>
+                        <img src="./assets/img/brook-chara.png" alt="Brook" class="chara-img" style="height:300px; top:-20px; right:-60px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">383.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Musician</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>90 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>West Blue (Namakura Island)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                    <section class="chara card">
+                        <h3>Jin<br>be</h3>
+                        <img src="./assets/img/jinbei-chara.png" alt="Jinbe" class="chara-img" style="height:300px; top:-10px; right:-50px;">
+                        <h5 class="nominal"><img src="./assets/logo/berries-logo.png" alt="Berries" class="berries-logo">1.100.000.000</h5>
+                        <table>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Helmsman</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>46 (after timeskip)</td>
+                            </tr>
+                            <tr>
+                                <th>Origin:</th>
+                                <td>Grand Line (Fishman Island)</td>
+                            </tr>                            
+                        </table>
+                    </section>
+                </article>
                 <h2 id="arcs">Arcs</h2>
                 <article class="arcs-content">
                     <section class="arcs card">
@@ -185,66 +294,84 @@
                         <img src="./assets/img/gomu gomu no mi.png" alt="Gomu gomu no mi">
                         <div class="defruit-desc card">
                             <h4>Gomu gomu no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Paramecia Type</h5>
+                            <p>Grants the user's body the properties of rubber</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/bara bara no mi.png" alt="Bara bara no mi">
                         <div class="defruit-desc card">
                             <h4>Bara bara no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Paramecia Type</h5>
+                            <p>Allows the user to split their own body into pieces and levitate said pieces at will</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/hana hana no mi.png" alt="Hana hana no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Hana hana no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Paramecia Type</h5>
+                            <p>Allows the user to replicate and sprout pieces of their body from the surface of any object or living thing</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/ito ito no mi.png" alt="Ito ito no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Ito ito no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Paramecia Type</h5>
+                            <p>Allows the user to create and manipulate strings</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/ope ope no mi.png" alt="Ope ope no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Ope ope no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Paramecia Type</h5>
+                            <p>Grants the power to create a spherical domain, inside of which the user can freely rearrange,
+                                take apart, and "surgically" remodel anything and anyone</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/hito hito no mi.png" alt="Hito hito no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Hito hito no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Zoan Type</h5>
+                            <p>Allows its user to transform into a human or a half-human hybrid at will</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/mera mera no mi.png" alt="Mera mera no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Mera mera no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Logia Type</h5>
+                            <p>Allows the user to create, control, and transform into fire at will</p>
                         </div>
                     </section>
                     <section class="defruit">
                         <img src="./assets/img/yami yami no mi.png" alt="Yami yami no mi" class="">
                         <div class="defruit-desc card">
                             <h4>Yami yami no mi</h4>
-                            <p>lorem ipsum</p>
+                            <h5>Logia Type</h5>
+                            <p>Allows the user to create, control, and transform into darkness at will</p>
                         </div>
                     </section>
                 </article>
             </div>
             <aside>
-                <article class="mini-gallery card">
-                    <h2>Mini Gallery</h2>
-                </article>
-                <article class="organizations card">
-                    <h2>Organizations</h2>
+                <article class="gallery card">
+                    <h2>Gallery</h2>
+                    <div class="gallery-wrapper">
+                        <div class="gallery-track">
+                            <img src="./assets/img/gallery1.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery2.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery3.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery4.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery5.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery6.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery7.jpg" alt="" class="pic">
+                            <img src="./assets/img/gallery8.jpg" alt="" class="pic">
+                        </div>
+                    </div>
                 </article>
                 <article class="profile card">
                     <header>
@@ -285,57 +412,8 @@
             </aside>
         </main>
         <footer>
-
+            <p>&#169; 2025 One Piece Fan Site</p>
         </footer>
-        <script>
-            //swipe up
-            const swipeButton = document.getElementById("swipeButton");
-            const slidingContent = document.getElementById("slidingContent");
-
-            swipeButton.addEventListener("click", () => slidingContent.scrollIntoView({behavior: "smooth"}));
-
-            //main menu
-            const menuButton = document.getElementById("menuButton");
-            const menuDropdown = document.getElementById("menuDropdown");
-
-            menuButton.addEventListener("click", () => menuDropdown.classList.toggle("show"));
-
-            document.addEventListener("click", (e) => {
-                if(!menuButton.contains(e.target) && !menuDropdown.contains(e.target)) {
-                    menuDropdown.classList.remove("show");
-                }
-            })
-
-            //looping navigation
-            const listItem = [
-                {iconClass: "round home-menu nav-button", text:"Home", link:"#slidingContent"},
-                {iconClass: "round chara-menu nav-button", text:"Characters", link:"#characters"},
-                {iconClass: "round arcs-menu nav-button", text:"Arcs", link:"#arcs"},
-                {iconClass: "round defruit-menu nav-button", text:"Devil's Fruit", link:"#defruit"}
-            ];
-
-            const menuList = document.getElementById("menuList");
-
-            listItem.forEach(item => {
-                const li = document.createElement("li");
-
-                const a = document.createElement("a");
-                a.href = item.link;
-
-                const i = document.createElement("i");
-                i.className = item.iconClass;
-
-                const span = document.createElement("span");
-                span.textContent = item.text;
-
-                a.appendChild(i);
-                a.appendChild(span);
-
-                li.appendChild(a);
-
-                menuList.appendChild(li);
-            })
-
-        </script>
+        <script src="./scripts.js"></script>
     </body>
 </html>
