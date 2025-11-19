@@ -391,7 +391,6 @@ footer {
     }
 
     .chara-content {
-        overflow: hidden;
         gap: 30px;
     }
 
@@ -422,6 +421,10 @@ footer {
     .gallery-wrapper {
         height: 350px;
         width: 500px;
+    }
+
+    aside {
+        margin: 0;
     }
 
     .profile {
