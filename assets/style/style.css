@@ -11,12 +11,13 @@ html, body{
 
 body {
     background-color: #1D212A;
-    color: beige;
     font-family: "Poppins", sans-serif;
+    color: beige;
 }
 
 main {
     display: flex;
+    flex-direction: row;
 }
 
 h1,
@@ -27,6 +28,31 @@ h5 {
 
 p {
     font-size: small;
+}
+
+.navy {
+    background-color: #1D212A;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.brown {
+    background-color: #48463D;
+    box-shadow: 0 4px 8px 0 rgba(183, 173, 117, 0.2);
+}
+
+.blue {
+    background-color: #303643;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.beige {
+    background-color: #E0DABE;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(183, 173, 117, 0.2);
+}
+.card {
+    border-radius: 20px;
+    padding: 20px;
 }
 
 /*landing page*/
@@ -92,7 +118,6 @@ p {
 }
 
 .nav-button {
-    background-color: #48463D;
     background-size: contain;
 }
 
@@ -114,7 +139,7 @@ p {
 }
 
 .defruit-menu {
-    background-image: url(../logo/devilFruit-logo.png);
+    background-image: url('../logo/devilFruit-logo.png');
     background-size: 25px;
 }
 
@@ -143,8 +168,8 @@ p {
     color: beige;
 }
 
+/*sliding*/
 .sliding-content {
-    background-color: #303643;
     margin: 50px auto;
     width: 95%;
 }
@@ -181,15 +206,10 @@ p {
     flex-grow: 5;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 20px;
-}
 
 /*chara content*/
 .chara-content {
-    width: 800px;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     height: max-content;
@@ -203,11 +223,9 @@ p {
 
 .chara {
     height: 450px;
-    background-color: #E0DABE;
     position: relative;
     display: flex;
     flex-direction: column;
-    color: black;
     margin-top: 50px;
 }
 
@@ -226,7 +244,7 @@ p {
 }
 
 .berries-logo {
-    width: 15px;
+    width: 20px;
 }
 
 /*arcs content*/
@@ -245,8 +263,6 @@ p {
 
 .arcs {
     width: 400px;
-    background-color: #E0DABE;
-    color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -260,8 +276,8 @@ p {
 
 /*devil's fruit*/
 .defruit-content {
-    height: 300px;
-    width: 800px;
+    max-height: 300px;
+    max-width: 800px;
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
@@ -285,8 +301,6 @@ p {
     position: absolute;
     top: -25px;
     right: -80px;
-    background-color: #E0DABE;
-    color: black;
     margin: 10px;
 }
 
@@ -300,16 +314,21 @@ aside {
     margin: 0 30px;
     display: flex;
     flex-direction: column;
-    gap: 250px;
+    align-items: center;
+    gap: 50px;
 }
 
 .profile {
-    background-color: #303643;
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
 }
 
 figure img {
@@ -321,7 +340,6 @@ table {
 }
 
 .gallery {
-    background-color: #303643;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,8 +349,8 @@ table {
 }
 
 .gallery-wrapper {
-    height: 200px;
-    width: 230px;
+    max-height: 200px;
+    max-width: 230px;
     overflow: hidden;
 }
 
@@ -344,4 +362,87 @@ table {
 .pic {
     width: 100%;
     flex-shrink: 0;
+}
+
+/*footer*/
+footer {
+    margin: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .slide {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slide img {
+        width: 80%;
+        order: -1;
+    }
+
+    .chara-content {
+        overflow: hidden;
+        gap: 30px;
+    }
+
+    .arcs,
+    .defruit,
+    aside {
+        width: 100%;
+    }
+
+    .defruit-content {
+        justify-content: center;
+    }
+
+    .defruit {
+        display: flex;
+        flex-basis: calc(50% - 10px);
+    }
+
+    .defruit img {
+        width: 80%;
+    }
+
+    .gallery,
+    .profile {
+        width: 60%;
+    }
+
+    .gallery-wrapper {
+        height: 350px;
+        width: 500px;
+    }
+
+    .profile {
+        flex-direction: row;
+        gap: 25px;
+        font-size: large;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .defruit {
+        flex-basis: auto;
+        justify-content: center;
+    }
+
+    .defruit img {
+        width: 50%;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
 }

@@ -18,23 +18,23 @@
 
             //looping navigation
             const listItem = [
-                {iconClass: "round home-menu nav-button", text:"Home", link:"#slidingContent"},
-                {iconClass: "round chara-menu nav-button", text:"Characters", link:"#characters"},
-                {iconClass: "round arcs-menu nav-button", text:"Arcs", link:"#arcs"},
-                {iconClass: "round defruit-menu nav-button", text:"Devil's Fruit", link:"#defruit"}
+                {iconClass: "round home-menu brown nav-button", text:"Home", link:"#slidingContent"},
+                {iconClass: "round chara-menu brown nav-button", text:"Characters", link:"#characters"},
+                {iconClass: "round arcs-menu brown nav-button", text:"Arcs", link:"#arcs"},
+                {iconClass: "round defruit-menu brown nav-button", text:"Devil's Fruit", link:"#defruit"}
             ];
 
             const menuList = document.getElementById("menuList");
 
             listItem.forEach(item => {
                 const li = document.createElement("li");
-
+                
                 const a = document.createElement("a");
                 a.href = item.link;
-
+                
                 const i = document.createElement("i");
                 i.className = item.iconClass;
-
+                
                 const span = document.createElement("span");
                 span.textContent = item.text;
 
